@@ -31,9 +31,9 @@ function MostrarTask() {
     ListadeItens.forEach((item, posicao) => {
         NovaLi +=
             `<li id="task" class="task ${item.concluida && "done"}">
-            <img src="./pictures/checked.png" alt="Ícone concluído" onclick="ConcluirTask(${posicao})">
+            <img src="./image/checked.png" alt="Ícone concluído" onclick="ConcluirTask(${posicao})">
             <p>${item.tarefa}</p>
-            <img src="./pictures/trash.png" class="trash-icon" alt="Ícone de lixeira" onclick="Deletaritem(${posicao})">
+            <img src="./image/trash.png" class="trash-icon" alt="Ícone de lixeira" onclick="Deletaritem(${posicao})">
         </li>`
 
     })
