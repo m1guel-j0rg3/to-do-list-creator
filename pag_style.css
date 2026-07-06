@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background: url("./pictures/background\(1\).jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    padding-top: 5px;
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.container {
+    background: #000080b1;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+
+    width: 600px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 50px;
+}
+
+.input-task::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.input-task {
+    background-color: #9732fc;
+    color: #fff;
+
+    border: none;
+    border-radius: 15px;
+
+    font-size: 18px;
+    width: 300px;
+    min-width: 150px;
+    height: 50px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.input-task:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;    
+}
+
+.input-task:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 15px;
+
+    font-size: 16px;
+    width: 150px;
+    height: 60px;
+    margin-left: 10px;
+
+    background-color: #000051;
+    color: #FFF;
+
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+button:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+.list-tasks{
+    width: 100%;
+
+}
+
+.task{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+    list-style: none;
+    
+    border: 1px solid #FFF;
+    border-radius: 15px;
+
+    font-size: 20px;
+    height: 80px;
+    margin: 20px 0;
+    gap: 20px;
+
+    background: #6000E0;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 40px;
+    opacity: 0;
+}
+.task:hover img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.task:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center;
+}
+
+.done{
+    background-color: #005104;
+    text-decoration: line-through;
+}
